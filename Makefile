@@ -3,7 +3,7 @@ CFLAGS = -std=c++14 -I ~/.local/include/eigen3 -g -O3 -c -Wall -pedantic
 LFLAGS = -std=c++14 -g
 LIBS = -pthread
 
-EXE = spectro
+EXE = cfd
 
 $(EXE): obj/main.o obj/volume.o
 	$(CC) $(LFLAGS) obj/*.o -o $(EXE) $(LIBS)
